@@ -16,8 +16,8 @@ limitations under the License.
 package actor
 
 import (
-	"github.com/ontio/ontology-eventbus/eventstream"
-	"github.com/ontio/ontology-eventbus/log"
+	"github.com/zhaohaijun/go-async-queue/eventstream"
+	"github.com/zhaohaijun/go-async-queue/log"
 )
 
 type deadLetterProcess struct{}
