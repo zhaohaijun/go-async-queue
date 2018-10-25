@@ -13,16 +13,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 *****************************************************/
-package remote
+package zmqremote
 
 import (
-	"go-async-queue/internal/queue/mpsc"
 	"runtime"
 	"sync/atomic"
 
 	"fmt"
 
 	"go-async-queue/internal/queue/goring"
+	"go-async-queue/internal/queue/mpsc"
 
 	"github.com/zhaohaijun/go-async-queue/log"
 	"github.com/zhaohaijun/go-async-queue/mailbox"
