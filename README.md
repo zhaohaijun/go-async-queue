@@ -4,7 +4,6 @@
 
 [跨节点通讯](#跨节点通讯)
 
-[ONT验签测试](#验签测试)
 
 # 关于Actor模型
 Actor是计算机科学领域中的一个并行计算模型，它把actors当做通用的并行计算原语：一个actor对接收到的消息做出响应，进行本地决策，可以创建更多的actor，或者发送更多的消息；同时准备接收下一条消息。
@@ -591,23 +590,3 @@ message Ping {
 }
 message Pong {}
 ```
-
-# 验签测试
-
-代码详见example/testRemoteCrypto目录以及example/testSyncCrypto目录
-
-测试环境为微软云机器
-
-## 异步验签测试
-| 模式 | 256B大小消息 | 512B大小消息 | 1k大小消息 | 10k大小消息 |
-| :-: | :-: | :-: | :-: | :-: |
-| 一台验签(zeromq) | 3666/s | 3590/s | 3479/s | 2848/s |
-| 两台验签(zeromq) | 7509/s | 7431/s | 7204/s | 6976/s |
-
-## 同步验签测试
-| 指标 | 256B大小消息 | 512B大小消息 | 1k大小消息 | 10k大小消息 |
-| :-: | :-: | :-: | :-: | :-: |
-| 验签时间 | 0.242ms | 0.247ms | 0.246ms | 0.334ms |
-| latency | 1.36ms | 1.31ms | 1.39ms | 1.94ms |
-
-This Module is based on AsynkronIT/protoactor-go project, more details goes to https://github.com/AsynkronIT/protoactor-go.
