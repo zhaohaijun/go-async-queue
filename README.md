@@ -100,7 +100,7 @@ protoactor-go目前可以每秒在两个actor之间传递200万条消息，并�
 
 ```text
 /app/go/bin/go build -o "/tmp/Build performanceTest.go and rungo" 
-/app/gopath/src/github.com/ontio/ontology-eventbus/example/performanceTest.go
+/app/gopath/src/github.com/zhaohaijun/go-async-queue/example/performanceTest.go
 start at time: 1516953710985385134
 end at time 1516953716291953904
 run time:10000000     elapsed time:5306 ms
@@ -113,7 +113,7 @@ protoactor-go目前可以在串行同步调用的情况下每秒在client和serv
 ```text
 goos: linux
 goarch: amd64
-pkg: github.com/ontio/ontology-eventbus/example/benchmark
+pkg: github.com/zhaohaijun/go-async-queue/example/benchmark
 benchmark                  iter                 time/iter          bytes alloc          allocs
 ---------                  ----                ---------           -----------          ------
 BenchmarkSyncTest-4   	 1000000	      1967 ns/op	     432 B/op	      13 allocs/op
